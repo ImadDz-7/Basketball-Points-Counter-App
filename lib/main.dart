@@ -16,6 +16,22 @@ class PointsCounter extends StatelessWidget {
           title: const Text('Points Counter'),
           backgroundColor: Colors.orange,
         ),
+        body: Column(
+          children: [
+            Text(
+              'Team A',
+              style: TextStyle(
+                fontSize: 26,
+              ),
+            ),
+            Text(
+              '0',
+              style: TextStyle(
+                fontSize: 140,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
