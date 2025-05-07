@@ -10,7 +10,13 @@ class PointsCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Points Counter'),
+          backgroundColor: Colors.orange,
+        ),
+      ),
     );
   }
 }
