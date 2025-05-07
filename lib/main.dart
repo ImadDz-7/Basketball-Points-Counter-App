@@ -18,7 +18,7 @@ class PointsCounter extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text(
+            const Text(
               'Team A',
               style: TextStyle(
                 fontSize: 26,
@@ -30,6 +30,51 @@ class PointsCounter extends StatelessWidget {
                 fontSize: 140,
               ),
             ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange,
+                minimumSize: Size(130, 50),
+              ),
+              onPressed: () {},
+              child: Text(
+                'Add 1 point',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+            const Spacer(flex: 1),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange,
+                minimumSize: Size(130, 50),
+              ),
+              onPressed: () {},
+              child: Text(
+                'Add 2 points',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+            const Spacer(flex: 1),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange,
+                minimumSize: Size(130, 50),
+              ),
+              onPressed: () {},
+              child: Text(
+                'Add 3 points',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+            const Spacer(flex: 8),
           ],
         ),
       ),
