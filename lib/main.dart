@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const PointsCounter());
+  runApp(PointsCounter());
 }
 
 class PointsCounter extends StatelessWidget {
-  const PointsCounter({super.key});
-
+  int teamAPoints = 0;
+  int teamBPoints = 0;
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
