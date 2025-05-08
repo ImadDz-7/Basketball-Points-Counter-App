@@ -17,6 +17,7 @@ class PointsCounter extends StatelessWidget {
           backgroundColor: Colors.orange,
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
               children: [
@@ -78,6 +79,12 @@ class PointsCounter extends StatelessWidget {
                 ),
                 const Spacer(flex: 8),
               ],
+            ),
+            const VerticalDivider(
+              color: Colors.grey,
+              thickness: 1,
+              indent: 40,
+              endIndent: 130,
             ),
             Column(
           children: [
