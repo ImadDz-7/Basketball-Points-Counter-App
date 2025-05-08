@@ -47,7 +47,7 @@ class PointsCounter extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Spacer(flex: 1),
+                const SizedBox(height: 16),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.orange,
@@ -62,7 +62,7 @@ class PointsCounter extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Spacer(flex: 1),
+                const SizedBox(height: 16),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.orange,
@@ -77,7 +77,6 @@ class PointsCounter extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Spacer(flex: 8),
               ],
             ),
             const VerticalDivider(
@@ -87,66 +86,65 @@ class PointsCounter extends StatelessWidget {
               endIndent: 130,
             ),
             Column(
-          children: [
-            const Text(
-              'Team B',
-              style: TextStyle(
-                fontSize: 26,
-              ),
-            ),
-            Text(
-              '0',
-              style: TextStyle(
-                fontSize: 140,
-              ),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.orange,
-                minimumSize: Size(130, 50),
-              ),
-              onPressed: () {},
-              child: Text(
-                'Add 1 point',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
+              children: [
+                const Text(
+                  'Team B',
+                  style: TextStyle(
+                    fontSize: 26,
+                  ),
                 ),
-              ),
-            ),
-            const Spacer(flex: 1),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.orange,
-                minimumSize: Size(130, 50),
-              ),
-              onPressed: () {},
-              child: Text(
-                'Add 2 points',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
+                Text(
+                  '0',
+                  style: TextStyle(
+                    fontSize: 140,
+                  ),
                 ),
-              ),
-            ),
-            const Spacer(flex: 1),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.orange,
-                minimumSize: Size(130, 50),
-              ),
-              onPressed: () {},
-              child: Text(
-                'Add 3 points',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.orange,
+                    minimumSize: Size(130, 50),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Add 1 point',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
                 ),
-              ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.orange,
+                    minimumSize: Size(130, 50),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Add 2 points',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.orange,
+                    minimumSize: Size(130, 50),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Add 3 points',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ],
             ),
-            const Spacer(flex: 8),
-          ],
-        ),
           ],
         ),
       ),
